@@ -17,10 +17,10 @@ const props = defineProps({
 const convertCurrency1 = reactive({ value: 1, alias: props.aliasList[0]})
 const convertCurrency2 = reactive({ value: 1, alias: props.aliasList[1]})
 
-const coefficient = ref(0)
+const coefficient = ref(1)
 
 const findCF = () => {
-  coefficient.value = props.currencies[`${convertCurrency1.alias}-${convertCurrency2.alias}`]
+  coefficient.value = props.currencies[`${convertCurrency1.alias}-${convertCurrency2.alias}`] || 1
 }
 
 const currencyValueMutator1 = () => {
