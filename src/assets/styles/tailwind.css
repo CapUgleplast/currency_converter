@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background: theme('colors.light');
+    }
+}
+
+@layer components {
+    .btn-dark {
+        @apply text-secondary bg-black rounded-[6px] px-3.5 py-2 leading-4 font-semibold
+        hover:text-primary hover:bg-dark-light
+        active:text-primary active:bg-dark-light;
+
+        &.router-link-active, &.router-link-exact-active {
+            @apply text-primary bg-dark-light;
+        }
+    }
+
+    .dropdown {
+        &.dropdown-btn {
+            @apply inline-flex w-full justify-center gap-x-1.5 rounded-md
+                   bg-white px-3 py-2 text-sm font-semibold text-gray-900
+                   shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50;
+        }
+
+        &.dropdown-window {
+            @apply absolute right-0 z-10 mt-2 w-56 origin-top-right
+                   rounded-md bg-white shadow-lg ring-1 ring-black
+                   ring-opacity-5 focus:outline-none;
+
+            a, option {
+                @apply block px-4 py-2 text-sm text-gray-700;
+            }
+        }
+    }
+}
