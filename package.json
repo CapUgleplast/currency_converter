@@ -1,5 +1,5 @@
 {
-  "name": "values_converter",
+  "name": "currency_converter",
   "version": "1.0.0",
   "private": true,
   "type": "module",
