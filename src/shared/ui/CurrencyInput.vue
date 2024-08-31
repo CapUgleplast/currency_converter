@@ -1,10 +1,18 @@
 <script setup lang="ts">
-const model = defineModel()
+import {watch} from "vue";
+
+const model = defineModel<number>()
 const emit = defineEmits(['input'])
 
 const inputEmit = () => {
     emit('input', model.value)
 }
+
+watch(model, (value, oldValue) => {
+    if(value && value < 0) {
+      model.value = 0
+    }
+})
 
 </script>
 

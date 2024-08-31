@@ -1,16 +1,17 @@
 
 import HttpService from "@/entities/http.service";
+import type CurrencyModel from "@/entities/Currency/currency.model";
 
 export default class CurrencyService {
 
-    index(): Promise<any> {
+    index(): Promise<Response> {
         return fetch(HttpService.getBaseUrl() + '/currency',
             {
                 method: 'GET'
             })
     }
 
-    available(): Promise<any> {
+    available(): Promise<CurrencyModel[]> {
         return new Promise((resolve) => {
                 resolve([
                     {

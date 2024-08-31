@@ -5,7 +5,7 @@ import GlobalCurrencySetter from "@/features/currency/GlobalCurrencySetter.vue";
 
 <template>
   <div class="bg-black">
-    <div class="container flex flex-row justify-between text-light gap-20 p-3.5 mx-auto">
+    <div class="container flex flex-row justify-between text-light p-3.5 mx-auto">
         <nav class="flex gap-2.5">
           <router-link class="btn-dark" to="/" >Главная</router-link>
           <router-link class="btn-dark" to="convert">Ковертер</router-link>

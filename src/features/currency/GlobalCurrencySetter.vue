@@ -27,7 +27,7 @@ const setGlobalCurrency = (alias: string) => {
      <SelectDropdown :options="availableCurrs"
                      @change="setGlobalCurrency"
                      :model-value="globalCurrency"
-                     class="text-dark-light uppercase rounded-md px-2 py-1"
+                     class="text-dark-light uppercase md:w-20 rounded-md px-2 py-1"
      />
   </div>
 </template>

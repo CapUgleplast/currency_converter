@@ -25,13 +25,15 @@ const props = defineProps({
          :key="idx"
          class="flex items-center justify-center gap-2 text-xl"
     >
-      <p class="uppercase">1
+      <p class="uppercase">
+        1
         <span class="font-medium">
           {{idx.toString().split('-')[0]}}
         </span>
       </p>
       <span> = </span>
-      <p class="uppercase">{{item}}
+      <p class="uppercase">
+        {{item}}
         <span class="font-medium">
           {{globalCurr.alias}}
         </span>
