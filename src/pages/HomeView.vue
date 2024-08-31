@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CurrencyList from '@/widgets/CurrencyList/CurrencyList.vue';
 import {useCurrencyStore} from "@/store/currencies";
-import {computed, reactive} from "vue";
+import {computed} from "vue";
 import type CurrencyModel from "@/entities/Currency/currency.model";
 
 const store = useCurrencyStore()

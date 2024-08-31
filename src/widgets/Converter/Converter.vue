@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
-import {computed, reactive, ref} from "vue";
-import SelectDropdown from "@/shared/ui/SelectDropdown.vue";
-import CurrencyInput from "@/shared/ui/CurrencyInput.vue";
+import {reactive, ref} from "vue";
 import CurrencySetter from "@/features/currency/CurrencySetter.vue";
 
 const props = defineProps({

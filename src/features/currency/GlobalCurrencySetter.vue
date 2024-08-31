@@ -2,7 +2,7 @@
 
 import SelectDropdown from "@/shared/ui/SelectDropdown.vue";
 import {useCurrencyStore} from "@/store/currencies";
-import {computed, ref} from "vue";
+import {computed} from "vue";
 
 const store = useCurrencyStore()
 
